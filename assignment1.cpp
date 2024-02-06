@@ -44,7 +44,9 @@ int main() {
             cout << "exiting program." << endl;
             return 0;
         } else {
-            cout << "invalid input. enter number (1-6)." << endl;
+            cout << "invalid input. enter number (1-6)." << endl << endl;
+            cin.clear();    //clear and ignore for CIN error handling
+            cin.ignore();
             continue; //restart until a valid input is given (1-6)
         }
 
